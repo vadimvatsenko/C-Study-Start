@@ -9,7 +9,11 @@ void main() {
 
 	for (int i = 0; i < SIZE; i++) {
 		cout << arr[i] << endl;
+		cout << (arr + i) << endl; // записи адресов ячейки памяти
+		cout << *(arr + i) << endl; // будем получать значения
 	}
+
+	cout << *(arr + 1) << endl; // будет лежать 55
 
 	cout << "=====================" << endl;
 
@@ -17,6 +21,8 @@ void main() {
 
 	cout << "arr " << arr << endl;
 	cout << "pArr " << pArr << endl;
+
+	cout << "*pArr " << *pArr << endl;
 
 	cout << "=====================" << endl;
 
